@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>barman</title>
+    <script src="js/extra.js"></script>
+</head>
+<body ng-version="9.1.4">
+    <div class="header">the most difficult cocktail to make? Martini!</div>
+    <div class="please-next-dude js-hidden">
+        <p>Bored? Ok, let's go to the next stage!</p>
+        <a class="start-button" href="./hackertime.html">Go, go, go!</a>
+    </div>
+    <div class="cocktail-container js-hidden">
+        <label for="cocktailName">Type cocktail name, please, then press Enter</label>
+        <input id="cocktailName" type="text">
+        <div class="note"></div>
+        <div class="name"></div>
+        <div class="image"></div>
+        <div class="instruction"></div>
+        <div class="ingredients"></div>
+    </div>
+    <div class="content">
+        <div class="message-to-you">meh, you failed, 1:0 for me</div>
+    </div>
+    <script src="js/require.min.js"></script>
+    <script src="js/build/app.js"></script>
+</body>
+</html>

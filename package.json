@@ -1,0 +1,22 @@
+{
+  "name": "rxtest",
+  "version": "1.0.0",
+  "description": "having fun with rxjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack",
+    "webpack-watch": "npx webpack watch"
+  },
+  "author": "your dad",
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^7.0.0",
+    "ts-loader": "^9.1.2",
+    "typescript": "^4.2.4",
+    "webpack": "^5.36.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.7.0"
+  }
+}

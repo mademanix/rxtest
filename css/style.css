@@ -1,0 +1,255 @@
+/* get necessary fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* some animu */
+@keyframes finefadeout {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eaeaea;
+
+    font-family: 'Roboto', sans-serif;
+
+    height: 100%;
+    width: 100%;
+}
+
+div.header {
+    background-color: #333;
+    color: #FFF;
+
+    height: 50px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    margin-bottom: 15px;
+
+    text-transform: uppercase;
+}
+
+div.content {
+
+    background-color: rgba(0, 0, 0, 0);
+
+    /* wow wow so much responsive */
+    height: calc(100vh - 65px); 
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+}
+div.content > .message-to-you {
+    font-size: 3rem;
+    animation-name: finefadeout;
+    animation-duration: 1s;
+}
+
+div.cocktail-container {
+    margin-top: 50px;
+}
+
+div.cocktail-container, div.please-next-dude {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+div.cocktail-container label {
+    padding-bottom: 10px;
+}
+
+div.cocktail-container input {
+    height: 30px;
+    width: 250px;
+    padding: 0px 20px;
+    margin-bottom: 15px;
+}
+
+
+
+div.cocktail-container > div {
+    margin-bottom: 15px;
+    max-width: 400px;
+}
+
+div.cocktail-container > div.name {
+    font-weight: bold;
+}
+
+div.cocktail-container > div.note {
+    font-weight: normal;
+    font-size: 0.8rem;
+    width: 280px;
+    padding-bottom: 15px;
+}
+
+div.cocktail-container > div.image > img {
+    max-height: 250px;
+}
+
+div.cocktail-container > div.instruction:empty {
+    border: unset;
+    padding: unset;
+}
+
+div.cocktail-container > div.instruction {
+    border: 2px dashed #333;
+    padding: 5px;
+}
+
+div.cocktail-container > div.ingredients {
+    padding-bottom: 15px;
+}
+
+a.start-button {
+
+    background-color: #333;
+
+    height: 40px;
+    width: 150px;
+    
+    padding: 10px;
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2px;
+
+    color: #eaeaea;
+    text-decoration: none;
+    
+}
+
+
+.iphone {
+    border: 1px solid;
+    background: white;
+
+    min-height: 530px;
+
+    font-family: helvetica;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iphone .iphone-header {
+    height: 50px;
+}
+
+.iphone .iphone-header > div.nickname {
+    text-align: center;
+    font-size: 1.5rem;
+    animation-name: unset;
+    animation-duration: unset;
+    /* i should use flex instead, but i am too lazy */
+    padding-top: 10px;
+}
+
+.iphone .chat {
+    width: 300px;
+    border-top: solid 1px #eee;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.iphone .messages {
+    display: flex;
+    flex-direction: column;
+}
+.iphone .message {
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.iphone .yours {
+    align-items: flex-start;
+}
+.iphone .yours .message {
+    margin-right: 25%;
+    color: white;
+    background-color: rgb(40, 218, 49);
+    position: relative;
+
+    text-align: left;
+}
+.iphone .yours .message.last:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: -7px;
+    height: 20px;
+    width: 20px;
+    background: #eee;
+    border-bottom-right-radius: 15px;
+}
+.iphone .yours .message.last:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -10px;
+    width: 10px;
+    height: 20px;
+    background: white;
+    border-bottom-right-radius: 10px;
+}
+.iphone .mine {
+    align-items: flex-end;
+}
+.iphone .mine .message {
+    color: white;
+    margin-left: 25%;
+    background: #0078fe;
+    position: relative;
+
+    text-align: left;
+}
+.iphone .mine .message.last:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: -8px;
+    height: 20px;
+    width: 20px;
+    background: #0078fe;
+    border-bottom-left-radius: 15px;
+}
+.iphone .mine .message.last:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: -10px;
+    width: 10px;
+    height: 20px;
+    background: white;
+    border-bottom-left-radius: 10px;
+}
+
+.js-hidden {
+    display: none !important;
+}
