@@ -1,7 +1,7 @@
 window.angular = {};
 window.angular.version = "9.1.4";
 
-if(window.chrome && false) {
+if(window.chrome) {
     var iscursed = false;
 
     var devtools = function() {};
